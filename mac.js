@@ -1,33 +1,33 @@
 // one \\
-function memory(memoryId,number){
-  const memoryInput=document.getElementById(memoryId);
-  let memoryNumber=memoryInput.innerText;
-  memoryNumber=parseFloat(memoryNumber);
-  memoryNumber=number;
-  memoryInput.innerText=memoryNumber;
+function property(propertyId,number){
+  const propertyInput=document.getElementById(propertyId);
+  let propertyNumber=propertyInput.innerText;
+  propertyNumber=parseFloat(propertyNumber);
+  propertyNumber=number;
+  propertyInput.innerText=propertyNumber;
   totalPrice();
 }
 //one\\
 document.getElementById('8GB-memory').addEventListener('click',function(){
-    memory('memory-add',0);
+    property('memory-add',0);
 });
 document.getElementById('16GB-memory').addEventListener('click',function(){
-    memory('memory-add',180);
+    property('memory-add',180);
 });
 document.getElementById('226GB').addEventListener('click',function(){
-    memory('storage-add',0);
+    property('storage-add',0);
 });
 document.getElementById('512GB').addEventListener('click',function(){
-    memory('storage-add',100);
+    property('storage-add',100);
 });
 document.getElementById('1TB').addEventListener('click',function(){
-    memory('storage-add',180);
+    property('storage-add',180);
 });
 document.getElementById('free-delivery').addEventListener('click',function(){
-    memory('delivery-add',0);
+    property('delivery-add',0);
 });
 document.getElementById('delivery-charge').addEventListener('click',function(){
-    memory('delivery-add',20);
+    property('delivery-add',20);
 });
 //two\\
 function totalPrice(){
