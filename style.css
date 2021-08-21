@@ -1,0 +1,5 @@
+button.effect:hover{
+    background-color: rgb(48, 44, 44);
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+}

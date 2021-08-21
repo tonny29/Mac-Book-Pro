@@ -8,6 +8,8 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!-- bootstrap   -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -19,24 +21,24 @@
             </div>
             <div style="margin-right: 20%;">
                 <div>
-                    <h1 class="text-5xl">Customize you blue 24-inch iMac with Apple M1 chip.</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora quia non itaque ad delectus ea libero omnis veritatis dignissimos. Pariatur architecto ad minus asperiores.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h1 class="text-5xl">Customize You <span class="text-blue-500">Blue 24-inch iMac</span> With Apple M1 Chip.</h1>
+                    <p>The Apple M1 chip is the first system on a chip (SoC) for Mac. Packed with an astonishing 16 billion transistors, it integrates the CPU, GPU, I/O, and every other significant component and controller onto a single tiny chip. Designed by Apple, M1 brings incredible performance, custom technologies and unparalleled power efficiency to the Mac.</p>
                     
                     <div class="mt-10 ">
                         <h3>Memory</h3>
-                        <button id="8GB-memory" class="border-2 border-blue-300 rounded p-2">8GB undefined memory</button>
-                        <button id="16GB-memory" class="border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">16GB undefined memory</button>
+                        <button id="8GB-memory" class="effect border-2 border-blue-300 rounded p-2">8GB undefined memory</button>
+                        <button id="16GB-memory" class="effect border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">16GB undefined memory</button>
                     </div>
                     <div class="mt-10">
                         <h3>Storage</h3>
-                        <button id="226GB" class="border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">226GB SSD storage</button>
-                        <button id="512GB" class="border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">512GB SSD storage</button>
-                        <button id="1TB" class="border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">1TB SSD storage</button>
+                        <button id="226GB" class="effect border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">226GB SSD storage</button>
+                        <button id="512GB" class="effect border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">512GB SSD storage</button>
+                        <button id="1TB" class="effect border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">1TB SSD storage</button>
                     </div>
                     <div class="mt-10">
-                        <h3>Choose your delivery option</h3>
-                        <button id="free-delivery" class="border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">Friday,august 25,free prime delivery</button>
-                        <button id="delivery-charge" class="border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">Friday,august 20,delivery charge $20</button>
+                        <h3>Choose Your Delivery Option</h3>
+                        <button id="free-delivery" class="effect border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">Friday,august 25,free prime delivery</button>
+                        <button id="delivery-charge" class="effect border-2 border-blue-300 rounded p-2" style="margin-left: 10px;">Friday,august 20,delivery charge $20</button>
                     </div>
                 </div>
             </div>
@@ -62,7 +64,7 @@
                     <h5 class="block">Delivery Charge</h5>
                     <h5>$<span id="delivery-add">0</span></h5>
                 </div>
-                <hr style="width: 60%;height:4px;border-width:0;color:red;background-color:red">
+                <hr style="width: 60%;height:4px;border-width:0;color:blue;background-color:blue">
                 <div class="grid grid-cols-2">
                     <h5 class="block">Total Price</h5>
                     <h5>$<span id="total-price">1299</span></h5>
@@ -70,13 +72,14 @@
                 <hr style="width: 60%;">
                 <div class="mt-2">
                     <h5>Add Promo Code</h5>
-                    <input class="border-2 border-gray-400 p-2" type="text" name="" id="cupon-input" placeholder="Type Promo Code">
-                    <button id="cupon-button" class="border-2 border-gray-900 bg-gray-400 p-2 gap-2">APPLY</button>
+                    <input class="border-2 border-gray-400 rounded p-4" type="text" name="" id="cupon-input" placeholder="Enter Promo Code">
+                    <button id="cupon-button" class="effect text-2xl border-2 border-blue-900 bg-blue-300 rounded px-4  font-semibold gap-2">APPLY</button>
                 </div>
             </div>
         </section>
+        <hr style="width:80%; margin-left: 10%;">
         <section>
-            <div class="text-center  mt-5 mb-5">
+            <div class="text-center  mt-2 mb-5">
                 <h1>TOTAL:$<span id="discount-total">1299</span> </h1>
             </div>
         </section>
